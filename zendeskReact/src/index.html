@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Toggle Switch -->
+  <div class="platform-slider" onclick="togglePlatform()">
+    <div class="slider-labels">
+      <img src="assets/zoomLogo.png" alt="Zoom" id="zoomLogo" class="logo-icon active"/>
+      <img src="assets/ZendeskLogo.png" alt="Zendesk" id="zendeskLogo" class="logo-icon"/>
+    </div>
+    <div id="sliderThumb" class="slider-thumb"></div>
+  </div>
+<!-- <div id="platformToggleWrapper" style="position: absolute; left: 20px; top: 20px; z-index: 9999;">
+  <div class="toggle-switch zoom" onclick="togglePlatform()">
+    <div class="switch-label switch-label--left">
+      <img src="assets/zoomLogo.png" alt="Zoom" class="toggle-icon" />
+    </div>
+    <div id="sliderThumb" class="switch-slider">
+      <img id="activePlatformIcon" src="assets/zoomLogo.png" alt="Active" style="width:20px;height:20px;">
+    </div>
+    <div class="switch-label switch-label--right">
+      <img src="assets/ZendeskLogo.png" alt="Zendesk" class="toggle-icon" />
+    </div>
+  </div>
+</div> -->
+
+
+
+  <!-- Close button -->
+
+  <!-- Logo -->
+  <!-- <div class="logo">
+    <img src="assets/SandezaLogo.jpg" alt="sandezaLogo" class="sandezaLogo"/>
+  </div> -->
+
+  <!-- Main content -->
+  <div class="main-content">
+    <div id="zoomPanel" class="tab-panel active">
+      <iframe 
+        src="https://applications.zoom.us/integration/phone/embeddablephone/home"
+        id="zoomCCP"
+        width="100%" 
+        height="700px" 
+        frameborder="0" 
+        scrolling="no">
+      </iframe>
+      <div style="text-align: center; font-size: 12px; color: #888; margin-top: 8px;">
+    
+      </div>
+    </div>
+    <div id="zendeskPanel" class="tab-panel">
+      <div id="root" ></div>
+    </div>
+  </div>
+
+  <script src="external.js"></script>
+
+    <!-- <div id="root"></div> -->
+    <!-- <p>Zendesk React App</p>
+    <img src="assets/download.png" alt="Zendesk Logo" /> -->
+    
+
+
+
+    <script src="https://static.zdassets.com/zendesk_app_framework_sdk/2.0/zaf_sdk.min.js"></script>
+    <script type="module" src="app"></script>
+  </body>
+</html>

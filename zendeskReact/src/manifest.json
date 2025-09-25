@@ -1,0 +1,31 @@
+{
+  "name": "ZoomPhone By Sandeza",
+  "author": {
+    "name": "Arta",
+    "email": "connect@sandeza-inc.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      
+
+      "top_bar": {
+        "url": "assets/index.html",
+        "flexible": true,
+        "size":{
+          "height": "500px",
+          "width": "350px"
+        }
+        
+      }
+    }
+  },
+  "requirements": {
+    "zendesk": {
+      "users": true 
+    }
+  },
+  "version": "1.0",
+  "frameworkVersion": "2.0"
+}

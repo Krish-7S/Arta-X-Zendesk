@@ -1,0 +1,64 @@
+/* Remove default spacing on Zendesk app container */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Optional: tighten up inside React app */
+.app-container {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+:root {
+  --background: #f9f9f9;
+  --surface: #fff;
+  --text-primary: #222;
+  --text-secondary: #555;
+  --input-bg: #fff;
+  --input-border: #ccc;
+
+
+  --tab-button-active-bg: #0077ff;
+  --tab-button-inactive-bg: #f6f6f6;
+  --tab-button-inactive-color: #333;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100dvh;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+body.dark-mode {
+  --background: #2a2a2a;
+  --surface: #333;
+  --text-primary: #eee;
+  --text-secondary: #bbb;
+  --input-bg: #444;
+  --input-border: #555;
+
+
+
+  --tab-button-active-bg: #0077ff; /* or a shade of blue */
+  --tab-button-inactive-bg: #222;
+  --tab-button-inactive-color: #bbb;
+}
